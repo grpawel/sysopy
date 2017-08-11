@@ -1,0 +1,17 @@
+Modyfikacja pliku:
+W linii 176 zamienilem '&data' na 'NULL':
+measure_print_time(op_find_all, NULL, "Deleting entry");
+Z tego powodu w program probuje dokonac dereferencji NULLa i nastepuje zrzucenie cora.
+Aby z pomoca gdb analizowac plik core, uruchomilem gdb podajac wadliwy program:
+gdb benchmark_static
+Nastepnie wywolalem polecenie
+(gdb) core core
+Daje to informacje o tym z jakiego powodu program zostal zakonczony.
+Aby przesledzic okolicznosci wystapienia bledu - stos wywolan funkcji trzeba wpisac
+(gdb) bt
+#0  0x0000000000401ce3 in op_find_all ()
+#1  0x0000000000401582 in measure_print_time ()
+#2  0x0000000000401f04 in test_address_book_times ()
+#3  0x0000000000401fa4 in main ()
+Uruchamiajac program skompilowany z dolaczonymi informacjami debugowymi przy pomocy gdb
+mozna uzyskac znacznie dokladniejsze informacje - np. nr linii w pliku gdzie wystapil blad.

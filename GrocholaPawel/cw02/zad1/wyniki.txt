@@ -1,0 +1,165 @@
+Przy permutowaniu rekordow funkcje systemowe zawsze sa szybsze, natomiast przy sortowaniu wolniejsze od funkcji bibliotecznych.
+Podejrzewam ze w obu przypadkach ma to zwiazek z buforowaniem danych - przy permutowaniu kazdy rekord jest zapisywany maksymalnie 2 razy, przez co widoczny jest narzut z niepotrzebnym buforowaniem. Przy sortowaniu kazdy rekord jest wielokrotnie odczytywany i zapisywany, dzieki czemu przechowywanie ich w pamieci RAM zwieksza wydajnosc operacji.
+
+Wyniki z dzialania skrypt zad1.sh:
+
+Record size=4, number=131072, shuffle lib
+
+real	0m0.756s
+user	0m0.120s
+sys	0m0.632s
+Record size=4, number=131072, shuffle sys
+
+real	0m0.459s
+user	0m0.068s
+sys	0m0.388s
+Record size=4, number=32768, shuffle lib
+
+real	0m0.189s
+user	0m0.036s
+sys	0m0.152s
+Record size=4, number=32768, shuffle sys
+
+real	0m0.115s
+user	0m0.032s
+sys	0m0.080s
+Record size=512, number=8192, shuffle lib
+
+real	0m0.054s
+user	0m0.012s
+sys	0m0.040s
+Record size=512, number=8192, shuffle sys
+
+real	0m0.049s
+user	0m0.004s
+sys	0m0.044s
+Record size=512, number=1024, shuffle lib
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.004s
+Record size=512, number=1024, shuffle sys
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Record size=4096, number=1024, shuffle lib
+
+real	0m0.008s
+user	0m0.004s
+sys	0m0.004s
+Record size=4096, number=1024, shuffle sys
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.008s
+Record size=4096, number=128, shuffle lib
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Record size=4096, number=128, shuffle sys
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Record size=8192, number=512, shuffle lib
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.004s
+Record size=8192, number=512, shuffle sys
+
+real	0m0.011s
+user	0m0.004s
+sys	0m0.004s
+Record size=8192, number=64, shuffle lib
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.000s
+Record size=8192, number=64, shuffle sys
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.004s
+Record size=4, number=1024, sort lib
+
+real	0m1.496s
+user	0m0.496s
+sys	0m0.996s
+Record size=4, number=1024, sort sys
+
+real	0m1.755s
+user	0m0.404s
+sys	0m1.348s
+Record size=4, number=256, sort lib
+
+real	0m0.096s
+user	0m0.040s
+sys	0m0.052s
+Record size=4, number=256, sort sys
+
+real	0m0.108s
+user	0m0.032s
+sys	0m0.072s
+Record size=512, number=1024, sort lib
+
+real	0m1.953s
+user	0m0.700s
+sys	0m1.248s
+Record size=512, number=1024, sort sys
+
+real	0m2.084s
+user	0m0.604s
+sys	0m1.476s
+Record size=512, number=256, sort lib
+
+real	0m0.130s
+user	0m0.044s
+sys	0m0.084s
+Record size=512, number=256, sort sys
+
+real	0m0.120s
+user	0m0.032s
+sys	0m0.084s
+Record size=4096, number=1024, sort lib
+
+real	0m3.762s
+user	0m1.004s
+sys	0m2.752s
+Record size=4096, number=1024, sort sys
+
+real	0m3.792s
+user	0m0.892s
+sys	0m2.892s
+Record size=4096, number=256, sort lib
+
+real	0m0.221s
+user	0m0.044s
+sys	0m0.176s
+Record size=4096, number=256, sort sys
+
+real	0m0.241s
+user	0m0.048s
+sys	0m0.192s
+Record size=8192, number=512, sort lib
+
+real	0m1.554s
+user	0m0.396s
+sys	0m1.156s
+Record size=8192, number=512, sort sys
+
+real	0m1.430s
+user	0m0.292s
+sys	0m1.136s
+Record size=8192, number=128, sort lib
+
+real	0m0.075s
+user	0m0.016s
+sys	0m0.056s
+Record size=8192, number=128, sort sys
+
+real	0m0.078s
+user	0m0.012s
+sys	0m0.064s

@@ -1,0 +1,10 @@
+#ifndef _MISC_H
+#define _MISC_H
+#include <stdio.h>
+#include <sys/types.h>
+
+size_t getline(char **lineptr, size_t *n, FILE *stream);
+char** split_to_words(char* str);
+int count_words(char* str);
+
+#endif

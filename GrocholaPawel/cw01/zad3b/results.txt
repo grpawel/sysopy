@@ -1,0 +1,64 @@
+
+Optimalization level O0
+Running tests...
+Test project /home/student/Desktop/GrocholaPawel/cw01/zad3b
+    Start 1: static
+1/2 Test #1: static ...........................   Passed    0.06 sec
+    Start 2: shared
+2/2 Test #2: shared ...........................   Passed    0.06 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.12 sec
+
+Optimalization level O1
+Running tests...
+Test project /home/student/Desktop/GrocholaPawel/cw01/zad3b
+    Start 1: static
+1/2 Test #1: static ...........................   Passed    0.06 sec
+    Start 2: shared
+2/2 Test #2: shared ...........................   Passed    0.06 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.12 sec
+
+Optimalization level O2
+Running tests...
+Test project /home/student/Desktop/GrocholaPawel/cw01/zad3b
+    Start 1: static
+1/2 Test #1: static ...........................   Passed    0.06 sec
+    Start 2: shared
+2/2 Test #2: shared ...........................   Passed    0.06 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.12 sec
+
+Optimalization level O3
+Running tests...
+Test project /home/student/Desktop/GrocholaPawel/cw01/zad3b
+    Start 1: static
+1/2 Test #1: static ...........................   Passed    0.06 sec
+    Start 2: shared
+2/2 Test #2: shared ...........................   Passed    0.06 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.12 sec
+
+Optimalization level Os
+Running tests...
+Test project /home/student/Desktop/GrocholaPawel/cw01/zad3b
+    Start 1: static
+1/2 Test #1: static ...........................   Passed    0.06 sec
+    Start 2: shared
+2/2 Test #2: shared ...........................   Passed    0.06 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.12 sec
+
+Przy roznych poziomach optymalizacji czasy niewiele sie roznia.
+Analizujac dokladniejsze wyjscie z programu rowniez nie widac znaczacych roznic.
+Moze to byc spowodowane zbyt mala wielkoscia wykorzystywanych danych do testow.

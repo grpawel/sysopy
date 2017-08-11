@@ -1,0 +1,23 @@
+a)
+
+1. wysłanie sygnału do procesu, gdy żaden wątek nie ma zamaskowanego tego sygnału
+Dla kazdego sygnalu program nie kontynuuje dzialania (zabity albo zatrzymany) a shell wypisuje odpowiedni komunikat.
+
+2. wysłanie sygnału do procesu, gdy główny wątek programu ma zamaskowany ten sygnał, a wszystkie pozostałe wątki nie
+Wszystkie sygnaly oprocz SIGKILL i SIGSTOP sa ignorowane.
+
+3. wysłanie sygnału do procesu, gdy wszystkie wątki mają zainstalowaną niestandardową procedurę obsługi przerwania, która wypisuje informację o nadejściu tego sygnału oraz PID i TID danego wątku
+Sygnal jest odbierany przez glowny proces - wypisuje sie jeden komunikat. SIGKILL i SIGSTOP nie sa obslugiwane.
+
+4. wysłanie sygnału do wątku z zamaskowanym tym sygnałem
+Dzialanie jest takie samo jak w pkt. 1.
+
+5. wysłanie sygnału do wątku, w którym zmieniona jest procedura obsługi sygnału, jak przedstawiono w punkcie 3
+Watek ktory odebral sygnal wypisuje komunikat i nie konczy sie.
+Sygnaly SIGKILL i SIGTERM odpowiednio zabijaja lub zatrzymuja caly proces.
+
+
+b)
+Program jest zabijany przez sygna SIGFPE.
+
+Linux version 3.19.0-82-generic (buildd@lgw01-06) (gcc version 4.9.2 (Ubuntu 4.9.2-10ubuntu13) ) #90-Ubuntu SMP Mon Feb 20 17:11:56 UTC 2017

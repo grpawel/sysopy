@@ -1,0 +1,78 @@
+Zad3a:
+benchmark_shared:
+Creating address book using list:
+	Real: 0.000006	 User:0.000000	 Sys: 0.000000
+Inserting first entry to empty book:
+	Real: 0.000002	 User:0.000000	 Sys: 0.000000
+Inserting next 1000 entries:
+	Real: 0.000132	 User:0.000000	 Sys: 0.000000
+Inserting #1002 entry:
+	Real: 0.000011	 User:0.000000	 Sys: 0.000000
+Finding first matching entry:
+	Real: 0.000020	 User:0.000000	 Sys: 0.000000
+Finding all matching entries:
+	Real: 0.000020	 User:0.000000	 Sys: 0.000000
+Deleting entry:
+	Real: 0.000021	 User:0.000000	 Sys: 0.000000
+Sorting list by email:
+	Real: 0.005729	 User:0.008000	 Sys: 0.000000
+Deleting book:
+	Real: 0.000039	 User:0.000000	 Sys: 0.000000
+
+Creating address book using tree:
+	Real: 0.000001	 User:0.000000	 Sys: 0.000000
+Inserting first entry to empty book:
+	Real: 0.000001	 User:0.000000	 Sys: 0.000000
+Inserting next 1000 entries:
+	Real: 0.007601	 User:0.008000	 Sys: 0.000000
+Inserting #1002 entry:
+	Real: 0.000016	 User:0.000000	 Sys: 0.000000
+Finding first matching entry:
+	Real: 0.000016	 User:0.000000	 Sys: 0.000000
+Finding all matching entries:
+	Real: 0.000041	 User:0.000000	 Sys: 0.000000
+Deleting entry:
+	Real: 0.000032	 User:0.000000	 Sys: 0.000000
+Sorting list by email:
+	Real: 0.007554	 User:0.008000	 Sys: 0.000000
+Deleting book:
+	Real: 0.000115	 User:0.000000	 Sys: 0.000000
+
+benchmark_static:
+Creating address book using list:
+	Real: 0.000005	 User:0.000000	 Sys: 0.000000
+Inserting first entry to empty book:
+	Real: 0.000002	 User:0.000000	 Sys: 0.000000
+Inserting next 1000 entries:
+	Real: 0.000134	 User:0.000000	 Sys: 0.000000
+Inserting #1002 entry:
+	Real: 0.000011	 User:0.000000	 Sys: 0.000000
+Finding first matching entry:
+	Real: 0.000026	 User:0.000000	 Sys: 0.000000
+Finding all matching entries:
+	Real: 0.000023	 User:0.000000	 Sys: 0.000000
+Deleting entry:
+	Real: 0.000024	 User:0.000000	 Sys: 0.000000
+Sorting list by email:
+	Real: 0.005556	 User:0.008000	 Sys: 0.000000
+Deleting book:
+	Real: 0.000028	 User:0.000000	 Sys: 0.000000
+
+Creating address book using tree:
+	Real: 0.000000	 User:0.000000	 Sys: 0.000000
+Inserting first entry to empty book:
+	Real: 0.000001	 User:0.000000	 Sys: 0.000000
+Inserting next 1000 entries:
+	Real: 0.006916	 User:0.008000	 Sys: 0.000000
+Inserting #1002 entry:
+	Real: 0.000015	 User:0.000000	 Sys: 0.000000
+Finding first matching entry:
+	Real: 0.000009	 User:0.000000	 Sys: 0.000000
+Finding all matching entries:
+	Real: 0.000035	 User:0.000000	 Sys: 0.000000
+Deleting entry:
+	Real: 0.000032	 User:0.000000	 Sys: 0.000000
+Sorting list by email:
+	Real: 0.007647	 User:0.008000	 Sys: 0.000000
+Deleting book:
+	Real: 0.000214	 User:0.000000	 Sys: 0.000000
